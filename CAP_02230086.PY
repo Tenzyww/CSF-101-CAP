@@ -25,11 +25,11 @@ def read_input(Input_your_file_name): #Defining read_input function
 def calculate_score(Total_Number_of_rounds):
     Goal = 0
     for opponent_choice, outcome in Total_Number_of_rounds:
-        if outcome == 'X':  # Defeat
+        if outcome == 'X':  # It is Defeat
             if opponent_choice == 'A':
-                Goal += 3  #  Paper blocks Rock
+                Goal += 3  #  if Paper blocks Rock
             elif opponent_choice == 'B':
-                Goal += 1  # Scissors cuts Paper
+                Goal += 1  # if Scissors cuts Paper
             elif opponent_choice == 'C':
                 Goal += 2  # Rock crushes sicssor
         elif outcome == 'Y':  # Draw
